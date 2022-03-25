@@ -2,21 +2,23 @@
     margin: 0;padding: 0;box-sizing: border-box;
 }
 body{
-   background: rgb(222, 221, 221);
-    min-height: 100vh;
+    background: rgb(222, 221, 221);
     display: flex;
+    height: 100vh;
     justify-content: center;
+    object-fit: contain;
 }
 .container {
     background-image: linear-gradient(45deg, rgb(56, 111, 239),rgba(217, 85, 246, 0.99),rgb(246, 43, 100),rgb(236, 242, 41),rgb(2, 255, 247),rgb(35, 236, 21));
     background-size: 600% 600%;
     width: 500px;
-   padding: 1rem 1rem;
-   box-shadow: 0 0 5px black;
-   position: relative;
-   overflow: hidden;
-   transition: all 0.5s linear;
-   animation: change 15s ease-in-out infinite;
+    height: 100vh;
+    padding: 1rem 1rem;
+    box-shadow: 0 0 5px black;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    animation: change 15s ease-in-out infinite;
 }
 
 @keyframes change {
@@ -31,9 +33,11 @@ body{
     }
 }
 .top-bar{
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    height: 8vh;
 }
 .top-bar i{
     transition: all 0.3s linear;
@@ -45,14 +49,10 @@ body{
 .top-bar span{
     font-size: 25px;
 }
-img{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    border-radius: 10%;
-    box-shadow: 0 0 10px 1px black;
-}
 .music-info{
+    width: 100%;
+    margin: auto;
+    position:relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,8 +62,15 @@ img{
     font-family: 'Dosis', sans-serif;
     font-family: 'Lobster', cursive;
 }
+img{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    border-radius: 10%;
+    box-shadow: 0 0 10px 1px black;
+}
 h2{
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 }
 .progress-area{
     width: 100%;
@@ -101,10 +108,10 @@ h2{
     font-weight: bold;
 }
 .controls{
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    position: relative;
-    bottom: -4rem;
+    margin-top: 2.5rem;
 }
 .controls i{
     transition: all 0.3s linear;
@@ -139,7 +146,7 @@ i{
     border-top-left-radius: 10px;
     transition: all 0.5s ease-out;
 }
-/* to be used in js */
+
 .library.show{
     bottom: 0;
 }
@@ -186,7 +193,60 @@ ul li:hover{
 ul .playing{
     background-color: white;
 }
-@media (max-width :800px){
+@media (min-height :700px){
+     .top-bar{
+        margin-top: 0.5rem;
+    }
+    .top-bar span{
+        font-size: 2rem;
+    }
+    .progress-area{
+        height: 12px; 
+    }
+    .controls{
+        margin-top: 4rem;
+    }
+    /* .top-bar i{
+        font-size: 3rem;
+    }
+    .music-info{
+        height: 60vh;
+        position: relative;
+    }
+    img{
+    } */
+}
+@media (min-height :800px){
+    h2{
+        margin-top: 2rem;
+    }
+    /* .progress-area{
+        height: 12px;
+    }
+    .controls{
+        margin-top: 4rem;
+    } */
+}
+@media (min-height :890px){
+    .progress-area{
+        margin-top: 3rem;
+    }
+}
+@media (min-height :1000px){
+    h2{
+        font-size: 3rem;
+    }
+    .progress-area{
+        margin-top: 4rem;
+    }
+    .progress-area span{
+        font-size: 1.5rem;
+    }
+    .controls{
+        margin-top: 6rem;
+    }
+}
+@media (max-width :600px){
     .container{
         width: 100%;
     }
