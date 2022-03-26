@@ -244,6 +244,10 @@ ul .playing{
         transform: none;
         color: inherit;
     }
+    .progress-bar::before{
+        top: -2px;
+        right: -0.5%;
+    }
     .controls i{
         transition: none;
     }
@@ -266,6 +270,12 @@ ul .playing{
     .top-bar i:hover{
         transform: none;
         color: inherit;
+    }
+    .progress-bar::before{
+        height: 17px;
+        width: 17px;
+        top: -2px;
+        right: -0.5%;
     }
     .controls i{
         transition: none;
