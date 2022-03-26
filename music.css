@@ -206,26 +206,11 @@ ul .playing{
     .controls{
         margin-top: 4rem;
     }
-    /* .top-bar i{
-        font-size: 3rem;
-    }
-    .music-info{
-        height: 60vh;
-        position: relative;
-    }
-    img{
-    } */
 }
 @media (min-height :800px){
     h2{
         margin-top: 2rem;
     }
-    /* .progress-area{
-        height: 12px;
-    }
-    .controls{
-        margin-top: 4rem;
-    } */
 }
 @media (min-height :890px){
     .progress-area{
@@ -246,8 +231,54 @@ ul .playing{
         margin-top: 6rem;
     }
 }
-@media (max-width :600px){
+@media (max-width :600px) {
     .container{
         width: 100%;
+    }
+} 
+@media (max-width:450px){
+    .top-bar i{
+        transition: none;
+    }
+    .top-bar i:hover{
+        transform: none;
+        color: inherit;
+    }
+    .controls i{
+        transition: none;
+    }
+    .controls i:hover{
+        transform: rotate(0deg);
+        color: inherit ;
+    }
+    .header i{
+        transition: none;
+    }
+    .header i:hover{
+        transform: rotate(0deg);
+        color: inherit;
+    }
+}
+@media (max-width:800px){
+    .top-bar i{
+        transition: none;
+    }
+    .top-bar i:hover{
+        transform: none;
+        color: inherit;
+    }
+    .controls i{
+        transition: none;
+    }
+    .controls i:hover{
+        transform: rotate(0deg);
+        color: inherit ;
+    }
+    .header i{
+        transition: none;
+    }
+    .header i:hover{
+        transform: rotate(0deg);
+        color: inherit;
     }
 }
