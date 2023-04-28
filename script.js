@@ -5,10 +5,10 @@ const allMusic = [{
     src :"Nirvana - Something In The Way(Full Epic Trailer Version) _ The Batman Trailer Song"
 },
     {
-    name : "No Glory",
-    artist : "Skan",
-    img :"no glory",
-    src :"Skan & Krale - No Glory (feat. M.I.M.E & Drama B)"
+    name : "Frozen",
+    artist : "2Scratch",
+    img :"frozen",
+    src :"2Scratch - FROZEN"
 },
 {
     name : "As We Fall",
